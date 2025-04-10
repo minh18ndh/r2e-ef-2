@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\minhn\\Downloads\\MyFirstEF\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {}
+    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\minhn\\Downloads\\MyFirstEF\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
+    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\MyFirstEF\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
         "projectName": "MyFirstEF.Domain",
-        "projectPath": "C:\\Users\\minhn\\Downloads\\MyFirstEF\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
+        "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
         "packagesPath": "C:\\Users\\minhn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minhn\\Downloads\\MyFirstEF\\MyFirstEF.Domain\\obj\\",
+        "outputPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

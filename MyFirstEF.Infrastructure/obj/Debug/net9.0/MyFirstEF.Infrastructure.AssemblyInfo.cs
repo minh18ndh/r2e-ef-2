@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyFirstEF.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0730ff865afd1bbb13675ce52ff4267b791115fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cae75f93b3c6d1c0f39dface0c462428cbf10e31")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFirstEF.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFirstEF.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
