@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using MyFirstEF.Application.DTOs.Requests;
+using MyFirstEF.Application.DTOs.Responses;
 using MyFirstEF.Application.Interfaces.Services;
-using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.API.Controllers;
 
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
 public class EmployeesController : ControllerBase
 {
     private readonly IEmployeeService _service;
@@ -16,27 +17,30 @@ public class EmployeesController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
+    public async Task<ActionResult<IEnumerable<EmployeeDto>>> Get()
+    {
+        var employees = await _service.GetAllAsync();
+        return Ok(employees);
+    }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> Get(Guid id)
+    public async Task<ActionResult<EmployeeDto>> Get(Guid id)
     {
-        var emp = await _service.GetByIdAsync(id);
-        return emp == null ? NotFound() : Ok(emp);
+        var employee = await _service.GetByIdAsync(id);
+        return employee == null ? NotFound() : Ok(employee);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] Employee employee)
+    public async Task<IActionResult> Post([FromBody] CreateEmployeeDto dto)
     {
-        await _service.AddAsync(employee);
+        await _service.AddAsync(dto);
         return Ok();
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(Guid id, [FromBody] Employee employee)
+    public async Task<IActionResult> Put(Guid id, [FromBody] CreateEmployeeDto dto)
     {
-        if (id != employee.Id) return BadRequest();
-        await _service.UpdateAsync(employee);
+        await _service.UpdateAsync(id, dto);
         return Ok();
     }
 
@@ -48,37 +52,23 @@ public class EmployeesController : ControllerBase
     }
 
     [HttpGet("with-department")]
-    public async Task<IActionResult> GetWithDepartment()
+    public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetWithDepartment()
     {
-        var result = await _service.GetAllAsync();
-
-        var data = result.Select(e => new
-        {
-            EmployeeName = e.Name,
-            DepartmentName = e.Department?.Name
-        });
-
-        return Ok(data);
+        var result = await _service.GetEmployeesWithDepartmentAsync();
+        return Ok(result);
     }
 
     [HttpGet("with-projects")]
-    public async Task<IActionResult> GetWithProjects()
+    public async Task<ActionResult<IEnumerable<EmployeeWithProjectsDto>>> GetWithProjects()
     {
-        var result = await _service.GetAllAsync();
-
-        var data = result.Select(e => new
-        {
-            EmployeeName = e.Name,
-            Projects = e.ProjectEmployees?.Select(pe => pe.Project?.Name).ToList() ?? new List<string?>()
-        });
-
-        return Ok(data);
+        var result = await _service.GetEmployeesWithProjectsAsync();
+        return Ok(result);
     }
 
-    [HttpGet("high-salary-rawsql")]
-    public async Task<IActionResult> GetHighSalaryRaw()
+    [HttpGet("high-salary")]
+    public async Task<ActionResult<IEnumerable<EmployeeDto>>> GetHighSalary()
     {
-        var result = await _service.GetHighSalaryEmployeesRawAsync();
+        var result = await _service.GetHighSalaryEmployeesAsync();
         return Ok(result);
     }
 }

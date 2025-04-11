@@ -1,12 +1,13 @@
-using MyFirstEF.Domain.Entities;
+using MyFirstEF.Application.DTOs.Requests;
+using MyFirstEF.Application.DTOs.Responses;
 
 namespace MyFirstEF.Application.Interfaces.Services;
 
 public interface ISalaryService
 {
-    Task<IEnumerable<Salary>> GetAllAsync();
-    Task<Salary?> GetByIdAsync(Guid id);
-    Task AddAsync(Salary salary);
-    Task UpdateAsync(Salary salary);
+    Task<IEnumerable<SalaryDto>> GetAllAsync();
+    Task<SalaryDto?> GetByIdAsync(Guid id);
+    Task AddAsync(CreateSalaryDto dto);
+    Task UpdateAsync(Guid id, CreateSalaryDto dto);
     Task DeleteAsync(Guid id);
 }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using MyFirstEF.Application.DTOs.Requests;
+using MyFirstEF.Application.DTOs.Responses;
 using MyFirstEF.Application.Interfaces.Services;
-using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.API.Controllers;
 
@@ -16,27 +17,30 @@ public class DepartmentsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
+    public async Task<ActionResult<IEnumerable<DepartmentDto>>> Get()
+    {
+        var result = await _service.GetAllAsync();
+        return Ok(result);
+    }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> Get(Guid id)
+    public async Task<ActionResult<DepartmentDto>> Get(Guid id)
     {
-        var entity = await _service.GetByIdAsync(id);
-        return entity == null ? NotFound() : Ok(entity);
+        var result = await _service.GetByIdAsync(id);
+        return result == null ? NotFound() : Ok(result);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] Department department)
+    public async Task<IActionResult> Post([FromBody] CreateDepartmentDto dto)
     {
-        await _service.AddAsync(department);
+        await _service.AddAsync(dto);
         return Ok();
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(Guid id, [FromBody] Department department)
+    public async Task<IActionResult> Put(Guid id, [FromBody] CreateDepartmentDto dto)
     {
-        if (id != department.Id) return BadRequest();
-        await _service.UpdateAsync(department);
+        await _service.UpdateAsync(id, dto);
         return Ok();
     }
 

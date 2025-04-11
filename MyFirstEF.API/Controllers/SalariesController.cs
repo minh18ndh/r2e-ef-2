@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using MyFirstEF.Application.DTOs.Requests;
+using MyFirstEF.Application.DTOs.Responses;
 using MyFirstEF.Application.Interfaces.Services;
-using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.API.Controllers;
 
@@ -16,27 +17,30 @@ public class SalariesController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
+    public async Task<ActionResult<IEnumerable<SalaryDto>>> Get()
+    {
+        var result = await _service.GetAllAsync();
+        return Ok(result);
+    }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> Get(Guid id)
+    public async Task<ActionResult<SalaryDto>> Get(Guid id)
     {
-        var item = await _service.GetByIdAsync(id);
-        return item == null ? NotFound() : Ok(item);
+        var result = await _service.GetByIdAsync(id);
+        return result == null ? NotFound() : Ok(result);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] Salary salary)
+    public async Task<IActionResult> Post([FromBody] CreateSalaryDto dto)
     {
-        await _service.AddAsync(salary);
+        await _service.AddAsync(dto);
         return Ok();
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(Guid id, [FromBody] Salary salary)
+    public async Task<IActionResult> Put(Guid id, [FromBody] CreateSalaryDto dto)
     {
-        if (id != salary.Id) return BadRequest();
-        await _service.UpdateAsync(salary);
+        await _service.UpdateAsync(id, dto);
         return Ok();
     }
 

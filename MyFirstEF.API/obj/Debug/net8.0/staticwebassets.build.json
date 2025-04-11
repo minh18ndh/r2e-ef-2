@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "tytdLcPojbzkfFZ3RKm/xomQefPDueiR+NUTBVwV7Y0=",
+  "Hash": "4S3dWJBQYIo1qlBFauyw9SQ0BO2zP1biGr3OPkWGoy8=",
   "Source": "MyFirstEF.API",
   "BasePath": "_content/MyFirstEF.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

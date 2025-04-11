@@ -1,8 +1,8 @@
-using MyFirstEF.Domain.Entities;
+using MyFirstEF.Application.DTOs.Responses;
 
 namespace MyFirstEF.Application.Interfaces.Repositories;
 
-public interface IEmployeeRepository : IRepository<Employee>
+public interface IEmployeeRepository
 {
-    Task<IEnumerable<Employee>> GetHighSalaryRawSqlAsync();
+    Task<IEnumerable<EmployeeDto>> GetHighSalaryEmployeesAsync();
 }

@@ -1,0 +1,12 @@
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\bin\Debug\net8.0\MyFirstEF.Domain.deps.json
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\bin\Debug\net8.0\MyFirstEF.Domain.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\bin\Debug\net8.0\MyFirstEF.Domain.pdb
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.AssemblyInfoInputs.cache
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.AssemblyInfo.cs
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.csproj.CoreCompileInputs.cache
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.sourcelink.json
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\refint\MyFirstEF.Domain.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\MyFirstEF.Domain.pdb
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Domain\obj\Debug\net8.0\ref\MyFirstEF.Domain.dll

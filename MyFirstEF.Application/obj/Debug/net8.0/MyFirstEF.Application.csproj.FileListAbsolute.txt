@@ -1,0 +1,16 @@
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\bin\Debug\net8.0\MyFirstEF.Application.deps.json
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\bin\Debug\net8.0\MyFirstEF.Application.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\bin\Debug\net8.0\MyFirstEF.Application.pdb
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\bin\Debug\net8.0\MyFirstEF.Domain.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\bin\Debug\net8.0\MyFirstEF.Domain.pdb
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.csproj.AssemblyReference.cache
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.AssemblyInfoInputs.cache
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.AssemblyInfo.cs
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.csproj.CoreCompileInputs.cache
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.sourcelink.json
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstE.3EC0DFAA.Up2Date
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\refint\MyFirstEF.Application.dll
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\MyFirstEF.Application.pdb
+C:\Users\minhn\Downloads\R2E assignments\r2e-ef-2\MyFirstEF.Application\obj\Debug\net8.0\ref\MyFirstEF.Application.dll

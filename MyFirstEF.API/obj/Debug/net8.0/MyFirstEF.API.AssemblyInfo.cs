@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyFirstEF.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46fd27133e9ceaf43cd4104d57fef10a16305452")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be907a5f56723f48c06ef362fe8e02424e119101")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFirstEF.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFirstEF.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

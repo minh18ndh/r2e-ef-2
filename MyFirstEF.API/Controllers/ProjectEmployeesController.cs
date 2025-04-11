@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using MyFirstEF.Application.DTOs.Requests;
+using MyFirstEF.Application.DTOs.Responses;
 using MyFirstEF.Application.Interfaces.Services;
-using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.API.Controllers;
 
@@ -16,26 +17,30 @@ public class ProjectEmployeesController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get() => Ok(await _service.GetAllAsync());
+    public async Task<ActionResult<IEnumerable<ProjectEmployeeDto>>> Get()
+    {
+        var result = await _service.GetAllAsync();
+        return Ok(result);
+    }
 
     [HttpGet("{projectId}/{employeeId}")]
-    public async Task<IActionResult> Get(Guid projectId, Guid employeeId)
+    public async Task<ActionResult<ProjectEmployeeDto>> Get(Guid projectId, Guid employeeId)
     {
-        var item = await _service.GetByKeyAsync(projectId, employeeId);
-        return item == null ? NotFound() : Ok(item);
+        var result = await _service.GetByKeyAsync(projectId, employeeId);
+        return result == null ? NotFound() : Ok(result);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] ProjectEmployee item)
+    public async Task<IActionResult> Post([FromBody] CreateProjectEmployeeDto dto)
     {
-        await _service.AddAsync(item);
+        await _service.AddAsync(dto);
         return Ok();
     }
 
     [HttpPut]
-    public async Task<IActionResult> Put([FromBody] ProjectEmployee item)
+    public async Task<IActionResult> Put([FromBody] CreateProjectEmployeeDto dto)
     {
-        await _service.UpdateAsync(item);
+        await _service.UpdateAsync(dto);
         return Ok();
     }
 
