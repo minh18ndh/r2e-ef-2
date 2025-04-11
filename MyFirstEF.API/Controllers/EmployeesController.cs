@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using MyFirstEF.Application.Interfaces.Services;
 using MyFirstEF.Domain.Entities;
 
+namespace MyFirstEF.API.Controllers;
+
 [Route("api/[controller]")]
 [ApiController]
 public class EmployeesController : ControllerBase

@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using MyFirstEF.Application.Interfaces.Services;
 using MyFirstEF.Domain.Entities;
 
+namespace MyFirstEF.API.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class DepartmentsController : ControllerBase
