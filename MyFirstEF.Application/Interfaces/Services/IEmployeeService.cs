@@ -13,4 +13,5 @@ public interface IEmployeeService
     Task<IEnumerable<EmployeeDto>> GetEmployeesWithDepartmentAsync();
     Task<IEnumerable<EmployeeWithProjectsDto>> GetEmployeesWithProjectsAsync();
     Task<IEnumerable<EmployeeDto>> GetHighSalaryEmployeesAsync();
+    Task AddWithSalaryAsync(CreateEmployeeWithSalaryDto dto);
 }

@@ -115,4 +115,9 @@ public class EmployeeService : IEmployeeService
     {
         return await _customRepo.GetHighSalaryEmployeesAsync();
     }
+
+    public async Task AddWithSalaryAsync(CreateEmployeeWithSalaryDto dto)
+    {
+        await _customRepo.AddWithSalaryAsync(dto);
+    }
 }

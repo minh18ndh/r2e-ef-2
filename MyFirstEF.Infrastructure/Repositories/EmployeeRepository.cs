@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using MyFirstEF.Application.DTOs.Responses;
+using MyFirstEF.Application.DTOs.Requests;
 using MyFirstEF.Application.Interfaces.Repositories;
 using MyFirstEF.Infrastructure.Data;
+using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.Infrastructure.Repositories;
 
@@ -45,5 +47,41 @@ public class EmployeeRepository : IEmployeeRepository
         }
 
         return result;
+    }
+
+    public async Task AddWithSalaryAsync(CreateEmployeeWithSalaryDto dto)
+    {
+        using var transaction = await _context.Database.BeginTransactionAsync();
+
+        try
+        {
+            var employee = new Employee
+            {
+                Id = Guid.NewGuid(),
+                Name = dto.Name,
+                DepartmentId = dto.DepartmentId,
+                JoinedDate = dto.JoinedDate
+            };
+
+            await _context.Employees.AddAsync(employee);
+            await _context.SaveChangesAsync();
+
+            var salary = new Salary
+            {
+                Id = Guid.NewGuid(),
+                EmployeeId = employee.Id,
+                Amount = dto.SalaryAmount
+            };
+
+            await _context.Salaries.AddAsync(salary);
+            await _context.SaveChangesAsync();
+
+            await transaction.CommitAsync();
+        }
+        catch
+        {
+            await transaction.RollbackAsync();
+            throw;
+        }
     }
 }

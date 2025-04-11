@@ -71,4 +71,11 @@ public class EmployeesController : ControllerBase
         var result = await _service.GetHighSalaryEmployeesAsync();
         return Ok(result);
     }
+
+    [HttpPost("create-with-salary")]
+    public async Task<IActionResult> CreateWithSalary([FromBody] CreateEmployeeWithSalaryDto dto)
+    {
+        await _service.AddWithSalaryAsync(dto);
+        return Ok("Created with transaction");
+    }
 }
