@@ -1,4 +1,4 @@
-namespace MyFirstEF.Application.Interfaces;
+namespace MyFirstEF.Application.Interfaces.Repositories;
 
 public interface IRepository<T> where T : class
 {

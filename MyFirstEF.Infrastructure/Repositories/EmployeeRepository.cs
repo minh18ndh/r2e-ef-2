@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Repositories;
 using MyFirstEF.Domain.Entities;
 using MyFirstEF.Infrastructure.Data;
 
@@ -7,12 +7,7 @@ namespace MyFirstEF.Infrastructure.Repositories;
 
 public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
 {
-    private readonly MyFirstEFDbContext _context;
-
-    public EmployeeRepository(MyFirstEFDbContext context) : base(context)
-    {
-        _context = context;
-    }
+    public EmployeeRepository(MyFirstEFDbContext context) : base(context) {}
 
     public async Task<IEnumerable<Employee>> GetHighSalaryRawSqlAsync()
     {

@@ -1,4 +1,5 @@
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Services;
+using MyFirstEF.Application.Interfaces.Repositories;
 using MyFirstEF.Domain.Entities;
 
 namespace MyFirstEF.Application.Services;

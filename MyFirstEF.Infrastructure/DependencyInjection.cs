@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Repositories;
+using MyFirstEF.Application.Interfaces.Services;
 using MyFirstEF.Application.Services;
 using MyFirstEF.Infrastructure.Repositories;
 

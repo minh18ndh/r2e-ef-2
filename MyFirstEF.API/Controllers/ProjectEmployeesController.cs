@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Services;
 using MyFirstEF.Domain.Entities;
 
 [ApiController]

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Services;
 using MyFirstEF.Domain.Entities;
 
 [Route("api/[controller]")]
@@ -67,7 +67,7 @@ public class EmployeesController : ControllerBase
         var data = result.Select(e => new
         {
             EmployeeName = e.Name,
-            Projects = e.ProjectEmployees?.Select(pe => pe.Project?.Name).ToList() ?? new List<string>()
+            Projects = e.ProjectEmployees?.Select(pe => pe.Project?.Name).ToList() ?? new List<string?>()
         });
 
         return Ok(data);

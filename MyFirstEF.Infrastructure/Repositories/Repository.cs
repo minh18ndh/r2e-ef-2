@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MyFirstEF.Application.Interfaces;
+using MyFirstEF.Application.Interfaces.Repositories;
 using MyFirstEF.Infrastructure.Data;
 
 namespace MyFirstEF.Infrastructure.Repositories;

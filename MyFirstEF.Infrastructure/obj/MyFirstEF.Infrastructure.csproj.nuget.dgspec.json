@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj": {}
+    "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj": {
+    "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj",
+        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj",
         "projectName": "MyFirstEF.Application",
-        "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj",
+        "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj",
         "packagesPath": "C:\\Users\\minhn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\obj\\",
+        "outputPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
-                "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj"
+              "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
+                "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj"
               }
             }
           }
@@ -47,12 +41,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -69,37 +62,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
+    "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
         "projectName": "MyFirstEF.Domain",
-        "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
+        "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj",
         "packagesPath": "C:\\Users\\minhn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\obj\\",
+        "outputPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -112,12 +99,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -134,43 +120,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj": {
+    "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj",
         "projectName": "MyFirstEF.Infrastructure",
-        "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Infrastructure\\MyFirstEF.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\minhn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\minhn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj": {
-                "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj"
+              "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj": {
+                "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Application\\MyFirstEF.Application.csproj"
               },
-              "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
-                "projectPath": "C:\\Users\\minhn\\Downloads\\R2E assignments\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj"
+              "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj": {
+                "projectPath": "C:\\Users\\minhn\\Downloads\\r2e-ef-2\\MyFirstEF.Domain\\MyFirstEF.Domain.csproj"
               }
             }
           }
@@ -184,12 +164,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -218,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

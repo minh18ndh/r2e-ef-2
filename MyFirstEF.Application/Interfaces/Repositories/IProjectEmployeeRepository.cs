@@ -1,6 +1,6 @@
 using MyFirstEF.Domain.Entities;
 
-namespace MyFirstEF.Application.Interfaces;
+namespace MyFirstEF.Application.Interfaces.Repositories;
 
 public interface IProjectEmployeeRepository
 {
